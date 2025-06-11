@@ -19,4 +19,4 @@ services:
         fromDatabase: false
         value: your_sandbox_passkey
       - key: CALLBACK_URL
-        value: https://your-render-url.onrender.com/api/callback
+        value: https://stk_push.onrender.com/callback

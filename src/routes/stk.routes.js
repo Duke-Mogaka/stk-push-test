@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { initiateSTKPush } = require('../controllers/stk.controller.js');
+const { initiateSTKPush } = require('../controller/stk.controller');
 
 router.post('/stkpush', initiateSTKPush);
 
