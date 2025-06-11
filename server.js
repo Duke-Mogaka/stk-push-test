@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const stkRoutes = require('./routes/stk.routes');
+const stkRoutes = require('./routes/stk.routes.js');
 
 const app = express();
 const PORT = process.env.PORT || 8080;
