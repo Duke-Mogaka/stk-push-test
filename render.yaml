@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: daraja-backend-js
+    env: node
+    buildCommand: npm install
+    startCommand: node src/server.js
+    envVars:
+      - key: PORT
+        value: 8080
+      - key: CONSUMER_KEY
+        fromDatabase: false
+        value: your_sandbox_consumer_key
+      - key: CONSUMER_SECRET
+        fromDatabase: false
+        value: your_sandbox_consumer_secret
+      - key: SHORT_CODE
+        value: 174379
+      - key: PASS_KEY
+        fromDatabase: false
+        value: your_sandbox_passkey
+      - key: CALLBACK_URL
+        value: https://your-render-url.onrender.com/api/callback
